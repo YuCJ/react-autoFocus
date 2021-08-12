@@ -3,10 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>React autoFocus example</title>
   </head>
+  <style>
+    h2 {
+      margin-top: 1.6em;
+    }
+    form {
+      width: 300px;
+      border: 1px solid black;
+      padding: 10px;
+      height: 50px;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+    blockquote {
+      margin-left: 0;
+      width: 300px;
+      color: #555555;
+      padding: 1em 2em 0.2em 3em;
+      border-left: 8px solid #78c0a8;
+      position: relative;
+      background: #ededed;
+    }
+
+    blockquote::before {
+      content: '\201C';
+      color: #78c0a8;
+      font-size: 4em;
+      position: absolute;
+      left: 10px;
+      top: 0;
+    }
+
+    blockquote::after {
+      content: '';
+    }
+
+    blockquote span {
+      display: block;
+      color: #333333;
+      font-style: normal;
+      font-weight: bold;
+      margin-top: 1em;
+    }
+  </style>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <h1>React autoFocus example</h1>
+    <div>
+      <h2>HTML autofocus element</h2>
+      <form id="html-autofocus-form">
+        <input type="text" id="html-autofocus-input" autofocus />
+      </form>
+    </div>
     <div id="root"></div>
+    <h2>Reference</h2>
+    <blockquote>
+      <p>
+        The autoFocus property (notice the camel case) in React tries to fix
+        cross-browser inconsistencies with the autofocus HTML attribute. To use
+        the autoFocus property, you could simply set it to boolean true or false
+        (which would set an input field to focus on mount accordingly)
+      </p>
+      <p>
+        <a
+          href="https://www.designcise.com/web/tutorial/how-to-focus-an-input-field-in-react-after-first-render#auto-focusing-on-mount"
+          >How to Focus an Input Field in React After First Render?</a
+        >
+      </p>
+    </blockquote>
+    <blockquote>
+      <p>
+        ...instead of actually setting a DOM attribute, we polyfill its behavior
+        in JavaScript.
+      </p>
+      <p>
+        <a
+          href="https://github.com/facebook/react/issues/11851#issuecomment-351672131"
+          >facebook/react#11851 (comment)</a
+        >
+      </p>
+    </blockquote>
   </body>
 </html>
