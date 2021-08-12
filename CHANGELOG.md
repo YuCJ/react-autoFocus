@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.3.0 (2021-08-12)
+
+
+### Features
+
+* add react example ([01d799a](https://github.com/YuCJ/react-static-site-template/commit/01d799ab365e4365d44695534c3b582dd054c81b))
+
+
+### Chores
+
+* add dist ([32107d3](https://github.com/YuCJ/react-static-site-template/commit/32107d3593fae6290a4c195b41183686f054e3f1))
+
 ### [1.2.1](https://github.com/YuCJ/react-static-site-template/compare/v1.2.0...v1.2.1) (2020-11-09)
 
 
